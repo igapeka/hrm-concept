@@ -5,7 +5,7 @@ import Avatar from "../Avatar/Avatar";
 import KODELogo from "../KODELogo/KODELogo";
 import header from "./header.module.css";
 import TextFancy from "../TextFancy/TextFancy";
-import { usePathname, useSelectedLayoutSegment } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { applist } from "@/app/applist";
 
 export default function Header() {

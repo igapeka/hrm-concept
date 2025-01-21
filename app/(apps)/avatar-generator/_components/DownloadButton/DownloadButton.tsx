@@ -1,4 +1,4 @@
-import { ComponentProps, ReactNode } from "react";
+import { ReactNode } from "react";
 import downloadbutton from "./downloadbutton.module.css";
 import classNames from "classnames";
 
