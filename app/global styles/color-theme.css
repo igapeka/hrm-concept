@@ -3,6 +3,7 @@
   --layer-background: #f6f6f9;
   --layer-01: #ffffff;
   --layer-neutral-soft: var(--brand-day-02-a);
+  --layer-neutral-soft-hover: var(--brand-day-03-a);
   --border-neutral-soft: var(--neutral-day-04-a);
   --content-primary: var(--neutral-day-12);
   --content-secondary: var(--neutral-day-11-a);
@@ -11,6 +12,7 @@
   --content-warning: var(--amber-day-11);
   --content-positive: var(--green-day-11);
   --layer-accent-solid: var(--brand-day-09);
+  --layer-accent-solid-hover: var(--brand-day-10);
   --layer-negative-solid: var(--red-day-09);
   --layer-warning-solid: var(--amber-day-09);
   --layer-positive-solid: var(--green-day-09);
@@ -20,6 +22,8 @@
   --border-positive-soft: var(--green-day-04-a);
   --border-negative-soft: var(--red-day-04-a);
   --border-warning-soft: var(--amber-day-04-a);
+  --border-accent: var(--brand-day-07);
+  --border-accent-soft: var(--brand-day-04-a);
   --content-on-accent: #ffffff;
   --content-on-negative: #ffffff;
   --content-on-positive: #ffffff;
@@ -58,6 +62,8 @@
     --border-warning-soft: var(--amber-night-04-a);
     --border-negative-soft: var(--red-night-04-a);
     --border-positive-soft: var(--green-night-04-a);
+    --border-accent: var(--brand-night-07);
+    --border-accent-soft: var(--brand-night-04-a);
     --layer-positive-soft: var(--green-night-02-a);
     --layer-warning-soft: var(--amber-night-02-a);
     --layer-negative-soft: var(--red-night-02-a);
@@ -65,6 +71,7 @@
     --layer-warning-solid: var(--amber-night-09);
     --layer-negative-solid: var(--red-night-09);
     --layer-accent-solid: var(--brand-night-09);
+    --layer-accent-solid-hover: var(--brand-night-10);
     --content-positive: var(--green-night-11);
     --content-warning: var(--amber-night-11);
     --content-negative: var(--red-night-11);
@@ -73,6 +80,7 @@
     --content-primary: var(--neutral-night-12);
     --border-neutral-soft: var(--neutral-night-04-a);
     --layer-neutral-soft: var(--neutral-night-04-a);
+    --layer-neutral-soft-hover: var(--neutral-night-06-a);
     --layer-01: var(--neutral-night-02);
     --layer-background: #111111;
   }

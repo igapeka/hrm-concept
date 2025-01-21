@@ -10,7 +10,11 @@ interface Props {
 
 export default function AppIcon({ appName, href, isExternal }: Props) {
   return (
-    <Link href={href} target={isExternal ? "_blank" : "_self"}>
+    <Link
+      className={appicon.link}
+      href={href}
+      target={isExternal ? "_blank" : "_self"}
+    >
       <div
         className={classNames(appicon.centerizer, "text-utility small regular")}
       >

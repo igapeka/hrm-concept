@@ -1,3 +1,4 @@
+import { Ref, RefObject } from "react";
 import TextUtility from "../TextUtility/TextUtility";
 import verticalcarousel from "./verticalcarousel.module.css";
 import Image, { StaticImageData } from "next/image";

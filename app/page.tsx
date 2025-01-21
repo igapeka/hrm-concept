@@ -67,7 +67,7 @@ export default function Home() {
           ))}
         </div>
         <hr />
-        <VerticalCarousel>
+        <VerticalCarousel numberOfSlides={banners.length}>
           {banners.map((banner) => (
             <VerticalCarouselSlide
               key={banner.alt}

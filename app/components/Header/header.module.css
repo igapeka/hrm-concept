@@ -12,6 +12,7 @@
   background: var(--layer-glass);
   backdrop-filter: blur(60px);
   color: var(--content-accent);
+  box-shadow: 0 1px 0 0 var(--border-neutral-soft);
   & a {
     /* чтобы логотип не прыгал, когда он в строке с названием приложения */
     height: 20px;
@@ -20,6 +21,7 @@
 
 .appname {
   color: var(--content-primary);
+  user-select: none;
 }
 
 .logonamewrap {

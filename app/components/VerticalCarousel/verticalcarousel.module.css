@@ -1,3 +1,27 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+  gap: 14px;
+  padding-left: 20px;
+}
+
+.dotsFamily {
+  display: grid;
+  gap: 8px;
+}
+
+.dot {
+  width: 6px;
+  aspect-ratio: 1;
+  background-color: var(--content-neutral-non-text);
+  border-radius: 50%;
+  &.current {
+    background-color: var(--content-secondary);
+  }
+}
+
 .widget {
   height: 216px;
   width: 100%;
@@ -12,6 +36,13 @@
   }
   &:hover {
     cursor: ns-resize;
+    box-shadow: 0 0 0 10px var(--neutral-day-03-a);
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 0 0 0 10px var(--neutral-night-03-a);
+    }
+  }
+  &:focus-visible {
+    outline: none;
     box-shadow: 0 0 0 10px var(--neutral-day-03-a);
     @media (prefers-color-scheme: dark) {
       box-shadow: 0 0 0 10px var(--neutral-night-03-a);

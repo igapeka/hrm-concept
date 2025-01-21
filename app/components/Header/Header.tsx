@@ -5,7 +5,7 @@ import Avatar from "../Avatar/Avatar";
 import KODELogo from "../KODELogo/KODELogo";
 import header from "./header.module.css";
 import TextFancy from "../TextFancy/TextFancy";
-import { usePathname } from "next/navigation";
+import { usePathname, useSelectedLayoutSegment } from "next/navigation";
 import { applist } from "@/app/applist";
 
 export default function Header() {
@@ -22,7 +22,7 @@ export default function Header() {
           {pathname && currentAppName}
         </TextFancy>
       </div>
-      <Avatar />
+      <Avatar size={28} />
     </div>
   );
 }

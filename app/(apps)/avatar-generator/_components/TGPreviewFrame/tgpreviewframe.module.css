@@ -6,19 +6,40 @@
   background: var(--layer-neutral-soft);
   border: 1px solid var(--border-neutral-soft);
   user-select: none;
+  @media screen and (max-width: 600px) {
+    padding: 44px 14px 0px 14px;
+    width: 100%;
+  }
 }
 
-.desktopFrame {
+.frame {
   border-top-left-radius: 12px;
   border-top: 1px solid var(--content-neutral-non-text);
   border-left: 1px solid var(--content-neutral-non-text);
+  @media screen and (max-width: 600px) {
+    border-radius: 48px 48px 0px 0px;
+    border-top: 1px solid var(--content-neutral-non-text);
+    border-right: 1px solid var(--content-neutral-non-text);
+    border-left: 1px solid var(--content-neutral-non-text);
+    padding-top: 20px;
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+  }
 }
 
-.desktopHeader {
+.desktopHeaderOrIsland {
   border-bottom: 1px solid var(--content-neutral-non-text);
   padding: 12px 16px;
   display: flex;
   gap: 12px;
+  @media screen and (max-width: 600px) {
+    width: 86px;
+    height: 23px;
+    border-radius: 999px;
+    border: 1px solid var(--content-neutral-non-text);
+    margin: auto;
+  }
 }
 
 .desktopHeaderCircle {
@@ -26,12 +47,19 @@
   width: 16px;
   border: 1px solid var(--content-neutral-non-text);
   border-radius: 50%;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
 
 .list {
   width: 360px;
   padding-top: 8px;
   border-right: 1px solid var(--content-neutral-non-text);
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    border: none;
+  }
 }
 
 .listItem {
@@ -49,6 +77,7 @@
 }
 
 .listItemCircle {
+  flex-shrink: 0;
   height: 72px;
   width: 72px;
   background-color: var(--layer-neutral-soft);

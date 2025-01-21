@@ -2,14 +2,14 @@ interface Props {
   backgroundColor: string;
   contentColor: string;
   avatarType: string;
-  userInput: string;
+  dateInput: string;
 }
 
 export default function AvatarForExport({
   backgroundColor,
   contentColor,
   avatarType,
-  userInput,
+  dateInput,
 }: Props) {
   // для правильного экспорта вроде как нужны инлайновые стили
   const textStyles = {
@@ -17,7 +17,7 @@ export default function AvatarForExport({
     fontSize: 48,
     fontWeight: 800,
     letterSpacing: "1px",
-    margin: 8,
+    lineHeight: "1.5em",
     textTransform: "uppercase" as const, // какой-то тупой костыль для енамов в инлайновых стилях
   };
   const elementStyles = {
@@ -34,7 +34,7 @@ export default function AvatarForExport({
     <div style={elementStyles}>
       <div>
         <p style={textStyles}>{avatarType}</p>
-        {avatarType !== "Day-Off" && <p style={textStyles}>до {userInput}</p>}
+        {avatarType !== "day-off" && <p style={textStyles}>до {dateInput}</p>}
       </div>
     </div>
   );

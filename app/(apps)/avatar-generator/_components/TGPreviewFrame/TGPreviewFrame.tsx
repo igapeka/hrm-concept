@@ -9,8 +9,10 @@ export default function TGPreviewFrame({ children }: Props) {
   return (
     <>
       <div className={tgpreviewframe.container}>
-        <div className={tgpreviewframe.desktopFrame}>
-          <div className={tgpreviewframe.desktopHeader}>
+        <div className={tgpreviewframe.frame}>
+          {/* ↓На десктопе это типа хедер окна, а в мобилке это типа вырез в экране↓ */}
+          <div className={tgpreviewframe.desktopHeaderOrIsland}>
+            {/* ↓"Эти штуки в мобилке прячутся"↓ */}
             <div className={tgpreviewframe.desktopHeaderCircle}></div>
             <div className={tgpreviewframe.desktopHeaderCircle}></div>
             <div className={tgpreviewframe.desktopHeaderCircle}></div>

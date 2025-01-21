@@ -1,0 +1,24 @@
+.button {
+  border: none;
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 12px;
+  color: var(--content-on-accent);
+  background-color: var(--layer-accent-solid);
+  -webkit-tap-highlight-color: transparent;
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--layer-accent-solid-hover);
+      cursor: pointer;
+    }
+  }
+  &:active {
+    opacity: 0.4;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
