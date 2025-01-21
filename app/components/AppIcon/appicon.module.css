@@ -1,0 +1,35 @@
+.centerizer {
+  width: 96px;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  text-align: center;
+  color: var(--content-primary);
+  transition: 0.3s;
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.08);
+      cursor: pointer;
+    }
+  }
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.appicon {
+  width: 72px;
+  aspect-ratio: 1;
+  background-color: var(--layer-neutral-soft);
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px var(--border-neutral-soft);
+}

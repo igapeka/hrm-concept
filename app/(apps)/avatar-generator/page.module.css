@@ -1,0 +1,14 @@
+.centerizer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  flex-grow: 1;
+  max-width: 900px;
+  padding: 16px;
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+}
