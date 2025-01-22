@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/hrm-concept',
+  assetPrefix: isProd ? '/hrm-concept/' : '',
+  basePath: isProd ? '/hrm-concept' : '',
 };
 
 export default nextConfig;
